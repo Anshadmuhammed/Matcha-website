@@ -622,6 +622,12 @@ a {
     margin-bottom: 3rem;
 }
 
+@media (max-width: 600px) {
+    .accessories-row {
+        grid-template-columns: 1fr;
+    }
+}
+
 .access-card {
     background: #fff;
     padding: 2rem;
@@ -821,47 +827,174 @@ a {
 }
 
 /* Responsive */
+/* Responsive Design System */
+/* Tablet & Small Desktop (max-width: 1024px) */
+@media (max-width: 1024px) {
+    :root {
+        --section-gap: 80px;
+        --gutter: 1.5rem;
+    }
+
+    .main-headline {
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+    }
+
+    .section-title {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .kit-grid-layout {
+        gap: 3rem;
+    }
+
+    .product-grid-main {
+        grid-template-columns: 1fr 1fr;
+        /* Keep 2 cols on tablet if possible, or switch to 1 */
+    }
+}
+
+/* Mobile Devices (max-width: 900px) - Major Breakpoint */
 @media (max-width: 900px) {
     .hero-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
+        padding-top: 120px;
+        /* More space for nav */
     }
 
     .hero-col-left,
     .hero-col-right {
-        order: 2;
-        align-items: center;
+        display: none;
+        /* Simplify hero on mobile */
     }
 
     .hero-col-center {
+        margin-bottom: 2rem;
+        width: 100%;
         order: 1;
+    }
+
+    .japanese-text-hero {
+        display: none;
+    }
+
+    .kit-grid-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .kit-image-display {
+        order: -1;
         margin-bottom: 2rem;
     }
 
-    .hero-image-wrapper {
-        margin-top: 0;
-    }
-
-    .japanese-text {
-        writing-mode: horizontal-tb;
-        margin-top: 1rem;
-        align-self: center;
-    }
-
     .benefits-grid,
-    .product-grid-main,
-    .footer-grid,
-    .essentials-grid {
+    .essentials-grid,
+    .footer-grid {
         grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .product-grid-main {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stack featured card nicely on mobile/tablet vertical */
+    .product-featured-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .featured-info {
+        margin-bottom: 2rem;
+    }
+
+    .product-featured-card:hover .featured-prod-img {
+        transform: scale(1.05);
+    }
+
+    .col-left-products {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .mini-card {
+        flex: 1;
+        min-width: 250px;
     }
 
     .header-inner {
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .main-nav {
-        margin: 1rem 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .main-nav a {
+        margin: 0;
+    }
+
+    .header-utilities {
+        display: none;
+    }
+}
+
+/* Small Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    :root {
+        --section-gap: 60px;
+        --gutter: 1rem;
+    }
+
+    .main-headline {
+        font-size: 3rem;
+        /* Still big */
+    }
+
+    .benefit-icons-row {
+        grid-template-columns: 1fr;
+        /* Stack icons */
+        gap: 2rem;
+    }
+
+    .accessories-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .btn {
+        width: 100%;
+        /* Full width buttons on mobile */
+        justify-content: center;
+    }
+
+    /* Make centered text align left on mobile for better readability? Or keep centered. Centered is usually fine for headings. */
+
+    .featured-prod-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .product-featured-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .product-featured-card:hover .featured-prod-img {
+        transform: scale(1.02);
     }
 }
 
