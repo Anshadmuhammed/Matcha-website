@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="MATON - Best Matcha in Town. Premium ceremonial grade matcha for wellness and focus.">
+    <title>MATON | Premium Matcha</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header / Nav -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">MATON</div>
+            <nav class="main-nav">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#testimonials">Testimonial</a>
+            </nav>
+            <div class="header-utilities">
+                <a href="#signin">Sign In</a>
+                <a href="#cart" class="cart-link">My Cart (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <canvas id="hero-canvas"></canvas>
+        <div class="container hero-grid">
+            <!-- Japanese Text (Absolute) -->
+            <div class="japanese-text-hero">
+                <p>抹茶の芸術</p>
+                <p>純粋な静けさ</p>
+            </div>
+
+            <!-- Center Column: Hero Object -->
+            <div class="hero-col-center">
+                <h1 class="main-headline">Best Matcha<br>in Town</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Starter Kit Feature Section -->
+    <section class="starter-kit-section">
+        <div class="container kit-grid-layout">
+            <!-- Text Content Side -->
+            <div class="kit-info-col">
+                <span class="eyebrow-dark">The Ritual Set</span>
+                <h2 class="section-title">Master the Art of<br>Traditional Brewing</h2>
+                <p class="body-text">Everything you need to experience the authentic Japanese tea ceremony at home.
+                    Hand-selected tools for the perfect froth.</p>
+
+                <div class="kit-feature-list">
+                    <div class="kit-feature">
+                        <h4>Bamboo Whisk (Chasen)</h4>
+                        <p>Hand-carved from a single piece of bamboo with 100 intricate tines for the smoothest foam.
+                        </p>
+                    </div>
+                    <div class="kit-feature">
+                        <h4>Ceramic Bowl (Chawan)</h4>
+                        <p>Wabi-sabi inspired design, crafted to retain heat and fit perfectly in your palms.</p>
+                    </div>
+                </div>
+
+                <a href="#shop" class="btn btn-primary margin-top">Get the Kit — $25</a>
+            </div>
+
+            <!-- Image Side -->
+            <div class="kit-image-display">
+                <img src="starter_kit_combo.png" alt="Matcha Starter Kit" class="kit-big-img">
+                <div class="premium-badge">
+                    <span>Best<br>Seller</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits / Lifestyle Section -->
+    <section class="benefits-section">
+        <div class="container benefits-grid">
+            <div class="benefits-text-block">
+                <h2 class="section-title">Experience Wellness<br>with Every Sip</h2>
+                <p class="body-text">Rich in antioxidants and calming amino acids, our matcha provides a sustained
+                    energy boost without the crash.</p>
+
+                <div class="benefit-icons-row">
+                    <div class="benefit-item">
+                        <div class="icon-circle">🍃</div>
+                        <h4>Rich Flavor</h4>
+                        <p>Umami packed notes</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon-circle">🇯🇵</div>
+                        <h4>Authentic</h4>
+                        <p>Sourced from Uji</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="icon-circle">♻️</div>
+                        <h4>Sustainable</h4>
+                        <p>Eco-friendly farming</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="benefits-visuals">
+                <div class="benefit-card">
+                    <span class="benefit-label">Anti Oxidant</span>
+                    <img src="benefit_antioxidant.png" alt="Rich Matcha Texture">
+                </div>
+                <div class="benefit-card" style="margin-top: 3rem;">
+                    <span class="benefit-label">Relax & Focus</span>
+                    <img src="benefit_relax.png" alt="Relaxing with Matcha">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Collection Section -->
+    <section id="products" class="collection-section">
+        <div class="container">
+            <h2 class="section-title center-text">Discover the World<br>of Matcha</h2>
+
+            <div class="product-grid-main">
+                <!-- Left: Stacked Mini Cards -->
+                <div class="col-left-products">
+                    <div class="mini-card">
+                        <span class="grade-label">Culinary Grade</span>
+                        <p>Perfect for blending</p>
+                        <span class="price">$15</span>
+                    </div>
+                    <div class="mini-card">
+                        <span class="grade-label">Premium Grade</span>
+                        <p>Everyday elegance</p>
+                        <span class="price">$20</span>
+                    </div>
+                </div>
+
+                <!-- Right: Featured Product -->
+                <div class="product-featured-card">
+                    <div class="featured-info">
+                        <h3>Ceremonial Grade<br>Matcha</h3>
+                        <span class="price-lg">$35</span>
+                    </div>
+                    <img src="product_ceremonial_tin.png" alt="Ceremonial Matcha Tin" class="featured-prod-img">
+                </div>
+            </div>
+
+            <div class="accessories-row">
+                <div class="access-card">
+                    <span>Bamboo Whisk</span>
+                </div>
+                <div class="access-card">
+                    <span>Ceramic Mug</span>
+                </div>
+                <div class="access-card">
+                    <span>Tea Pot</span>
+                </div>
+            </div>
+
+            <div class="cta-row center-text">
+                <a href="#all-products" class="btn btn-pill-outline">Explore All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Essentials Section -->
+    <section class="essentials-section">
+        <div class="container">
+            <h2 class="section-title center-text">Matcha Pairing Essentials</h2>
+            <div class="essentials-grid">
+                <!-- Card 1 -->
+                <div class="essential-card premium-card">
+                    <div class="essential-img-area">
+                        <img src="essential_latte_premium.png" alt="Barista Edition Matcha Latte">
+                        <div class="overlay-tag">New</div>
+                    </div>
+                    <div class="essential-info-stack">
+                        <span class="category-eyebrow">Cafe Collection</span>
+                        <h3>Barista Blend Latte Mix</h3>
+                        <p class="desc-text">Sweetened with organic monk fruit. Just add milk for a cafe-quality latte
+                            at home.</p>
+                        <div class="card-footer">
+                            <span class="price">$28.00</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="essential-card premium-card">
+                    <div class="essential-img-area">
+                        <img src="essential_dessert_premium.png" alt="Gourmet Matcha Patisserie">
+                    </div>
+                    <div class="essential-info-stack">
+                        <span class="category-eyebrow">Culinary Grade</span>
+                        <h3>Master's Culinary Powder</h3>
+                        <p class="desc-text">Robust flavor profile perfect for baking, smoothies, and raw desserts.</p>
+                        <div class="card-footer">
+                            <span class="price">$24.00</span>
+                            <button class="add-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-cta-col">
+                <h2 class="footer-offer">Save up to 50% or more<br>on matcha powder</h2>
+                <a href="#shop" class="btn btn-primary btn-large">Shop Bundle</a>
+
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Contact</h4>
+                        <p>hello@maton.com</p>
+                        <p>+1 234 567 890</p>
+                    </div>
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-visual-col">
+                <img src="footer_action_pour.png" alt="Pouring Tea Ritual">
+            </div>
+        </div>
+    </footer>
+
+    <script src="matcha-sequence.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
